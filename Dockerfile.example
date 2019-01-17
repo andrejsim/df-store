@@ -5,6 +5,13 @@ LABEL description="go infrastructure module for aws go sdk"
 
 RUN apk update && apk add --no-cache git
 
+RUN apk add --update \
+    python3 \
+    python3-dev \
+    py3-pip \
+    openssh \
+    build-base
+
 COPY . $GOPATH/src/mg/datafabric/app/
 
 WORKDIR $GOPATH/src/mg/datafabric/app/
