@@ -20,4 +20,6 @@ RUN go get -d -v github.com/aws/aws-sdk-go
 
 RUN git clone https://github.com/awsdocs/aws-doc-sdk-examples
 
+RUN go build aws-doc-sdk-examples/go/example_code/s3/list_all_buckets.go
+
 ENTRYPOINT sh
