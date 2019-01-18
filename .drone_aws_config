@@ -1,0 +1,4 @@
+[default]
+region = eu-west-1
+role_arn = arn:aws:iam::904675262287:role/drone-ecr-publish
+credential_source = Ec2InstanceMetadata
